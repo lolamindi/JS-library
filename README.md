@@ -50,7 +50,27 @@ The project required me to implement a parent class named Media, along with thre
     Getters:
         All properties have a getter method for easy access.
 
+## Usage
 
-### Conclusion
+To use this library management system, you can create instances of the Book, Movie, and CD classes. Each instance allows you to manage media items efficiently, keeping track of their checkout status and ratings.
 
-This project reflects my ability to apply JavaScript classes to build a functional library management system. Thank you for exploring my Build a Library project! 
+### Example
+
+```
+const myBook = new Book("The Great Gatsby", "F. Scott Fitzgerald", 180);
+myBook.addRating(5);
+myBook.addRating(3);
+console.log(myBook.getAverageRating()); // Outputs: 4
+myBook.toggleCheckOutStatus();
+console.log(myBook.isCheckedOut); // Outputs: true
+
+const myMovie = new Movie("Inception", "Christopher Nolan", 148);
+myMovie.addRating(5);
+console.log(myMovie.getAverageRating()); // Outputs: 5
+myMovie.toggleCheckOutStatus();
+console.log(myMovie.isCheckedOut); // Outputs: true
+
+const myCD = new CD("Abbey Road", "The Beatles", ["Come Together", "Something"]);
+myCD.addRating(5);
+console.log(myCD.getAverageRating()); // Outputs: 5
+```
