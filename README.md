@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Codecademy project requires you to imagine yourself as the newly appointed head librarian at Books-‘N-Stuff. The aim of the project is to modernise the library's media management system, which previously relied on index cards. This project demonstrates my ability to create a structured library system using classes. 
+This Codecademy project, *Build a Library* requires you to imagine yourself as the newly appointed head librarian at Books-‘N-Stuff. The aim of the project is to modernise the library's media management system, which previously relied on index cards. This project demonstrates my ability to create a structured library system using classes. 
 
 ## Project Structure
 The project required me to implement a parent class named Media, along with three subclasses: Book, Movie, and CD. Each class handles different types of media, incorporating shared functionalities and specific properties.
@@ -56,7 +56,7 @@ To use this library management system, you can create instances of the Book, Mov
 
 ### Example
 
-```
+```javascript
 const myBook = new Book("The Great Gatsby", "F. Scott Fitzgerald", 180);
 myBook.addRating(5);
 myBook.addRating(3);
